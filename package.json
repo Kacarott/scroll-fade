@@ -1,0 +1,19 @@
+{
+  "name": "scroll-fade",
+  "main": "./lib/scroll-fade",
+  "version": "0.1.0",
+  "description": "Your code fades away.",
+  "keywords": [
+    "theme",
+    "effect",
+    "scroll",
+    "fade"
+  ],
+  "activationCommands": {},
+  "repository": "https://github.com/Kacarott/scroll-fade",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
