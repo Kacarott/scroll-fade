@@ -1,8 +1,30 @@
 # Scroll Fade
 
-For my own theme I wanted a less harsh transition from the
-text editor to tab row. So I built my own.
+A tiny package for Atom that adds a fade-out effect to scrolled code.
 
-Adds small gradient to the top of your editor if it is scrolled.
+#### Before:
 
-Very early version, more features coming soon.
+![](WithoutFade.gif)
+
+#### After:
+
+![](WithFade.gif)
+
+Features:
+- Optional bottom fade
+- Set size of the fade
+- Automatically disables at top/bottom of page to not obscure your code.
+
+Coming Soon:
+- Choose custom colors
+- Horizontal fade
+- Optional other GUI fade
+
+###### Install:
+```
+apm install scroll-fade
+```
+
+Let me know if you find any bugs, or for feature requests!
+
+\- Keldan
