@@ -1,16 +1,28 @@
 @import "ui-variables";
 @import "syntax-variables";
 
-.scroll-fade[visibility="visible"] {
-  top: 0;
+.scroll-fade {
+
+  // Defaults
+  @fade-top: @syntax-background-color;
+  @fade-bottom: fade(@syntax-background-color, 0%);
+
+
+
   left: 0;
   width: 100%;
-  height: 40px;
   position: absolute;
-  background-image: linear-gradient(@syntax-background-color,fade(@syntax-background-color, 0%););
   z-index: 2;
   pointer-events: none;
-}
-.scroll-fade[visibility="hidden"] {
-  height: 0;
+  background-image: linear-gradient(@fade-top,@fade-bottom);
+  &:not(.bottom) {
+    top: 0;
+  }
+  &.bottom {
+    bottom: 0;
+    background-image: linear-gradient(@fade-bottom,@fade-top);
+  }
+  [visibility="hidden"]{
+    height: 0;
+  }
 }
